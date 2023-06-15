@@ -1,23 +1,20 @@
 import React from 'react';
 import ProductForm from './components/ProductForm';
 import FilterProduct from './components/FilterProduct';
+import MedicineForm from './Form/MedicineForm';
+import DisplayMedicine from './UI/DisplayMedicine';
 
-const dummyData=[];
 
 function App() {
-
-const[products,setProduct]=useState(dummyData);
-
-const addNewProductToData = (product)=>{
-  setProduct([product,...products]);
-}
-
-  return (
+return(
     <div>
-<ProductForm onAdding={addNewProductToData}/>
-<FilterProduct data={products}/>
+        <ProductProvider>
+            <MedicineForm/>
+            <DisplayMedicine/>
+        </ProductProvider>
     </div>
-  );
+)
+
 }
 
 export default App;
