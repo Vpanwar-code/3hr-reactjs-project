@@ -1,18 +1,17 @@
 import React from 'react';
-import ProductForm from './components/ProductForm';
-import FilterProduct from './components/FilterProduct';
-import MedicineForm from './Form/MedicineForm';
-import DisplayMedicine from './UI/DisplayMedicine';
-
+import Navigation from './components/layout/Navigation';
+import Summary from './components/layout/Summary';
+import ProductContent from './components/layout/ProductContent';
+import FooterComponent from './components/layout/FooterComponent';
 
 function App() {
 return(
-    <div>
-        <ProductProvider>
-            <MedicineForm/>
-            <DisplayMedicine/>
-        </ProductProvider>
-    </div>
+    <>
+      <Navigation/>
+      <Summary/>
+      <ProductContent/>
+      <FooterComponent/>
+    </>
 )
 
 }
