@@ -1,5 +1,6 @@
 import React from 'react';
 import {Navbar, Container, Nav, Button} from 'react-bootstrap';
+import CartButton from '../cart/CartButton';
 
 
 const Navigation = () => {
@@ -14,7 +15,7 @@ return(
             <Nav.Link href="#pricing">About</Nav.Link>
           </Nav>
         </Container>
-        <Button variant="outline-primary">Cart</Button>
+        <CartButton/>
       </Navbar>
     </>
 )
