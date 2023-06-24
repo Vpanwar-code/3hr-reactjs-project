@@ -1,17 +1,18 @@
 import React from 'react';
 import Navigation from './components/layout/Navigation';
 import Summary from './components/layout/Summary';
-import ProductContent from './components/layout/ProductContent';
 import FooterComponent from './components/layout/FooterComponent';
+import AvailableProducts from './components/products/AvailableProducts';
+import ProductProvider from './components/store/ProductProvider';
 
 function App() {
 return(
-    <>
+    <ProductProvider>
       <Navigation/>
       <Summary/>
-      <ProductContent/>
+      <AvailableProducts/>
       <FooterComponent/>
-    </>
+    </ProductProvider>
 )
 
 }
